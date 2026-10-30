@@ -35,6 +35,14 @@ Tugas mata kuliah Aplikasi Mobile (Pertemuan 5).
 
 - **Pesan Commit:** `refactor: extract avatar and info into custom widgets`
 
+### 3. Hari ke 2 commit ke 1 - Menambahkan btn dan membuat row
+    * **Update Halaman Profil (`lib/profile_page.dart`)**
+  * Nambahin **Tombol Edit Profil** pakai `ElevatedButton.icon` tepat di bawah info nama & role.
+  * Nambahin widget **Row** untuk nampilin statistik profil (12, Proyek, Followers). 
+  * Di sesi pagi ini, kodenya sengaja masih ditulis panjang dan ditumpuk manual (memakai 3 `Column` terpisah di dalam `Row`).
+
+* **Pesan Commit:** `feat: add profile statistics row`
+
 ---
 
 ## Struktur File

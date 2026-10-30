@@ -25,6 +25,44 @@ class ProfilePage extends StatelessWidget {
               const ProfileAvatar(),
               const SizedBox(height: 16), //mengubah dari width
               ProfileInfo(name: userName, role: role),
+              const SizedBox(height: 24),
+
+              ElevatedButton.icon(
+                onPressed: () {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                      content: Text(
+                        'Fitur edit belum aktif pada modul statis.',
+                      ),
+                    ),
+                  );
+                },
+                icon: const Icon(Icons.edit),
+                label: const Text('Edit Profil'),
+              ),
+              const SizedBox(height: 24),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Column(
+                    children: [
+                      const Text(
+                        '12',
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.deepPurple,
+                        ),
+                      ),
+                      const SizedBox(height: 4),
+                      const Text('Proyek', style: TextStyle(fontSize: 20)),
+                      const SizedBox(height: 4),
+                      const Text('Followers', style: TextStyle(fontSize: 20)),
+                    ],
+                  ),
+                ],
+              ),
             ],
           ),
         ),
@@ -73,3 +111,5 @@ class ProfileInfo extends StatelessWidget {
     );
   }
 }
+
+// Day 2 menabahkan btn dann row
