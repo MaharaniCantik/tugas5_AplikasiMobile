@@ -42,6 +42,20 @@ Tugas mata kuliah Aplikasi Mobile (Pertemuan 5).
   * Di sesi pagi ini, kodenya sengaja masih ditulis panjang dan ditumpuk manual (memakai 3 `Column` terpisah di dalam `Row`).
 
 * **Pesan Commit:** `feat: add profile statistics row`
+### 4. Hari ke2 commit ke 2 -Fixed error & Extract Widget
+
+* **Refactoring UI & Custom Widget**
+  Memecah baris `Row` statistik manual yang panjang menjadi Custom Widget terpisah agar kodenya modular dan ringkas.
+
+* **Widget yang Dipisah**
+  * `StatItem`: Template widget untuk satu item statistik yang fleksibel menggunakan parameter `label` dan `value`.
+  * `ProfileStats`: Widget pembungkus yang menata ketiga `StatItem` ke dalam satu baris `Row`.
+
+* **Fix Compilation & Const Error**
+  * Mengatasi error placement class (memastikan `ProfileStats` dan `StatItem` ditulis sejajar di luar class utama).
+  * Menangani error `Non-constant list literal` dengan menambahkan kata kunci `const` pada inisialisasi variabel list data di `ProfilePage`.
+
+* **Pesan Commit:** `refactor: extract statistics row into StatItem widget`
 
 ---
 

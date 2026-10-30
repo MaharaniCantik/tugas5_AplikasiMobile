@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
 class ProfilePage extends StatelessWidget {
-  const ProfilePage({super.key});
+  ProfilePage({super.key});
 
   final String userName = 'Maharani Kusuma Dewi S.kom';
   final String role = 'Senior Fullstack Developer & Dosen';
+
+  
 
   @override
   Widget build(BuildContext context) {
@@ -41,28 +43,7 @@ class ProfilePage extends StatelessWidget {
                 label: const Text('Edit Profil'),
               ),
               const SizedBox(height: 24),
-
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Column(
-                    children: [
-                      const Text(
-                        '12',
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.deepPurple,
-                        ),
-                      ),
-                      const SizedBox(height: 4),
-                      const Text('Proyek', style: TextStyle(fontSize: 20)),
-                      const SizedBox(height: 4),
-                      const Text('Followers', style: TextStyle(fontSize: 20)),
-                    ],
-                  ),
-                ],
-              ),
+              const ProfileStats(),
             ],
           ),
         ),
@@ -112,4 +93,45 @@ class ProfileInfo extends StatelessWidget {
   }
 }
 
-// Day 2 menabahkan btn dann row
+class ProfileStats extends StatelessWidget {
+  const ProfileStats({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        const StatItem(label: 'Proyek', value: '15'),
+        const SizedBox(width: 24),
+        const StatItem(value: '1.2K', label: 'Followers'),
+        const SizedBox(width: 24),
+        const StatItem(value: '42', label: 'Following'),
+      ],
+    );
+  }
+}
+
+class StatItem extends StatelessWidget {
+  final String value;
+  final String label;
+
+  const StatItem({super.key, required this.label, required this.value});
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Text(
+          value,
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+            color: Colors.deepPurple,
+          ),
+        ),
+        SizedBox(height: 24),
+        Text(label, style: TextStyle(fontSize: 14, color: Colors.grey[600])),
+      ],
+    );
+  }
+}
