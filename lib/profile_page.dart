@@ -117,28 +117,28 @@ class ProfileStats extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        const StatItem(label: 'Proyek', value: '15'),
+        const StatItem(label: 'Proyek', count: '15'),
         const SizedBox(width: 24),
-        const StatItem(value: '1.2K', label: 'Followers'),
+        const StatItem(count: '1.2K', label: 'Followers'),
         const SizedBox(width: 24),
-        const StatItem(value: '42', label: 'Following'),
+        const StatItem(count: '42', label: 'Following'),
       ],
     );
   }
 }
 
 class StatItem extends StatelessWidget {
-  final String value;
+  final String count;
   final String label;
 
-  const StatItem({super.key, required this.label, required this.value});
+  const StatItem({super.key, required this.label, required this.count});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         Text(
-          value,
+          count,
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,

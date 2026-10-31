@@ -70,6 +70,12 @@ Tugas mata kuliah Aplikasi Mobile (Pertemuan 5).
 
 - **Pesan Commit:** `feat: add scrollable experience list`
 
+### 6. Hari 3 commit ke 2 - Extract Widget & Styling Card
+* **Refactoring UI:** Mengekstrak desain baris di dalam `ListView.builder` menjadi Custom Widget terpisah bernama `ExperienceCard`.
+* **Styling Komponen:** Menambahkan widget `Card` pada `ExperienceCard` untuk memberikan efek bayangan (`elevation`), mengatur jarak (`margin`), serta menambahkan ikon koper (`Icons.work`) berwarna biru pada bagian *leading*.
+
+* **Pesan Commit:** `refactor: extract list tile into ExperienceCard widget and apply styling`
+
 ---
 
 ## Struktur File
