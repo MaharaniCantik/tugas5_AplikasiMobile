@@ -36,26 +36,39 @@ Tugas mata kuliah Aplikasi Mobile (Pertemuan 5).
 - **Pesan Commit:** `refactor: extract avatar and info into custom widgets`
 
 ### 3. Hari ke 2 commit ke 1 - Menambahkan btn dan membuat row
-    * **Update Halaman Profil (`lib/profile_page.dart`)**
-  * Nambahin **Tombol Edit Profil** pakai `ElevatedButton.icon` tepat di bawah info nama & role.
-  * Nambahin widget **Row** untuk nampilin statistik profil (12, Proyek, Followers). 
-  * Di sesi pagi ini, kodenya sengaja masih ditulis panjang dan ditumpuk manual (memakai 3 `Column` terpisah di dalam `Row`).
 
-* **Pesan Commit:** `feat: add profile statistics row`
+    * **Update Halaman Profil (`lib/profile_page.dart`)**
+
+- Nambahin **Tombol Edit Profil** pakai `ElevatedButton.icon` tepat di bawah info nama & role.
+- Nambahin widget **Row** untuk nampilin statistik profil (12, Proyek, Followers).
+- Di sesi pagi ini, kodenya sengaja masih ditulis panjang dan ditumpuk manual (memakai 3 `Column` terpisah di dalam `Row`).
+
+- **Pesan Commit:** `feat: add profile statistics row`
+
 ### 4. Hari ke2 commit ke 2 -Fixed error & Extract Widget
 
-* **Refactoring UI & Custom Widget**
+- **Refactoring UI & Custom Widget**
   Memecah baris `Row` statistik manual yang panjang menjadi Custom Widget terpisah agar kodenya modular dan ringkas.
 
-* **Widget yang Dipisah**
-  * `StatItem`: Template widget untuk satu item statistik yang fleksibel menggunakan parameter `label` dan `value`.
-  * `ProfileStats`: Widget pembungkus yang menata ketiga `StatItem` ke dalam satu baris `Row`.
+- **Widget yang Dipisah**
+  - `StatItem`: Template widget untuk satu item statistik yang fleksibel menggunakan parameter `label` dan `value`.
+  - `ProfileStats`: Widget pembungkus yang menata ketiga `StatItem` ke dalam satu baris `Row`.
 
-* **Fix Compilation & Const Error**
-  * Mengatasi error placement class (memastikan `ProfileStats` dan `StatItem` ditulis sejajar di luar class utama).
-  * Menangani error `Non-constant list literal` dengan menambahkan kata kunci `const` pada inisialisasi variabel list data di `ProfilePage`.
+- **Fix Compilation & Const Error**
+  - Mengatasi error placement class (memastikan `ProfileStats` dan `StatItem` ditulis sejajar di luar class utama).
+  - Menangani error `Non-constant list literal` dengan menambahkan kata kunci `const` pada inisialisasi variabel list data di `ProfilePage`.
 
-* **Pesan Commit:** `refactor: extract statistics row into StatItem widget`
+- **Pesan Commit:** `refactor: extract statistics row into StatItem widget`
+
+## 📌 Catatan Pengerjaan Hari 3
+
+### 5. Hari 3 commit ke 1 - List Pengalaman Kerja Dinamis & Scrollable
+
+- **Implementasi ListView & Expanded:** Menambahkan `Expanded` dan `ListView.builder` agar daftar pengalaman kerja dari array dummy data mengambil sisa ruang layar dan dapat di-scroll.
+- **Penghapusan Center:** Menghapus widget `Center` terluar pada `body` untuk mencegah bentrok batas ukuran (_RenderFlex error_) dengan `Expanded`.
+- **Desain Card:** Menggunakan `ExperienCard` dengan `Card` dan `ListTile` untuk menampilkan setiap item pengalaman kerja secara berurutan.
+
+- **Pesan Commit:** `feat: add scrollable experience list`
 
 ---
 

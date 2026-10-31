@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tugas_flutter6/profile_page.dart'; //memunculkan import
+import 'profile_page.dart'; //memunculkan import
 
 
 void main(){
