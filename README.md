@@ -82,6 +82,12 @@ Tugas mata kuliah Aplikasi Mobile (Pertemuan 5).
 * **Proporsi Layout:** Memastikan susunan tata letak terlihat proporsional, rapi, dan responsif saat ditampilkan di berbagai ukuran layar device.
 
 * **Pesan Commit:** `style: adjust padding and spacing for profile components`
+
+### 8. Hari 4 commit ke 2 - Penambahan Aksi Statis pada Tombol
+* **Tombol Edit Profil:** Menambahkan widget `ElevatedButton.icon` sebagai antarmuka untuk fitur edit profil.
+* **Notifikasi SnackBar:** Mengisi fungsi `onPressed` dengan `ScaffoldMessenger.of(context).showSnackBar` untuk memunculkan pesan pop-up singkat di bawah layar, sebagai penanda bahwa fitur edit masih bersifat statis (belum terhubung dengan *state*).
+
+* **Pesan Commit:** `feat: add static edit button with snackbar notification`
 ---
 
 ## Struktur File
