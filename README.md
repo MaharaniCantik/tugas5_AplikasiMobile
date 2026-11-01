@@ -76,6 +76,12 @@ Tugas mata kuliah Aplikasi Mobile (Pertemuan 5).
 
 * **Pesan Commit:** `refactor: extract list tile into ExperienceCard widget and apply styling`
 
+### 7.  Hari 4 commit ke 1 - Penyesuaian Tata Letak (Styling)
+
+* **Penyempurnaan Spasi & Padding:** Merapikan dan menyesuaikan ukuran `SizedBox` serta batas `Padding` di antara setiap komponen utama (`ProfileAvatar`, `ProfileInfo`, `ProfileStats`, dan `ListView`).
+* **Proporsi Layout:** Memastikan susunan tata letak terlihat proporsional, rapi, dan responsif saat ditampilkan di berbagai ukuran layar device.
+
+* **Pesan Commit:** `style: adjust padding and spacing for profile components`
 ---
 
 ## Struktur File

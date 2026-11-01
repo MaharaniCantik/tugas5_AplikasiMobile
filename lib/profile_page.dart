@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
 
-class ProfilePage extends StatelessWidget {
+class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
 
-  final String userName = 'Maharani Kusuma Dewi S.kom';
-  final String role = 'Senior Fullstack Developer & Dosen';
+  @override
+  State<ProfilePage> createState() => _ProfilePageState();
+}
 
-  final List<String> experiences = const [
+class _ProfilePageState extends State<ProfilePage> {
+  String userName = 'Maharani Kusuma Dewi S.kom';
+  String role = 'Senior Fullstack Developer & Dosen';
+
+  List<String> experiences = const [
     'Senior Backend Engineer - Goto',
     'Data Analyist - Goto',
     'Senior Mobile Developer - Tokopedia',
@@ -41,9 +46,9 @@ class ProfilePage extends StatelessWidget {
               icon: const Icon(Icons.edit),
               label: const Text('Edit Profil'),
             ),
-            const SizedBox(height: 24),
+            const SizedBox(height: 8),
             const ProfileStats(),
-            const SizedBox(height: 24),
+            const SizedBox(height: 8),
             const Align(
               alignment: Alignment.centerLeft,
               child: Text(
