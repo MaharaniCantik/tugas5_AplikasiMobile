@@ -60,7 +60,6 @@ Tugas mata kuliah Aplikasi Mobile (Pertemuan 5).
 
 - **Pesan Commit:** `refactor: extract statistics row into StatItem widget`
 
-## 📌 Catatan Pengerjaan Hari 3
 
 ### 5. Hari 3 commit ke 1 - List Pengalaman Kerja Dinamis & Scrollable
 
